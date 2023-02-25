@@ -1,0 +1,6 @@
+C:\Users\akinc\source\repos\TradeCompany\TicariOtomasyon.Entities\bin\Debug\TicariOtomasyon.Entities.dll
+C:\Users\akinc\source\repos\TradeCompany\TicariOtomasyon.Entities\bin\Debug\TicariOtomasyon.Entities.pdb
+C:\Users\akinc\source\repos\TradeCompany\TicariOtomasyon.Entities\obj\Debug\TicariOtomasyon.Entities.csproj.AssemblyReference.cache
+C:\Users\akinc\source\repos\TradeCompany\TicariOtomasyon.Entities\obj\Debug\TicariOtomasyon.Entities.csproj.CoreCompileInputs.cache
+C:\Users\akinc\source\repos\TradeCompany\TicariOtomasyon.Entities\obj\Debug\TicariOtomasyon.Entities.dll
+C:\Users\akinc\source\repos\TradeCompany\TicariOtomasyon.Entities\obj\Debug\TicariOtomasyon.Entities.pdb

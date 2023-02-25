@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{146818D2-8EF2-4112-9E04-CC0674C57D76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TicariOtomasyon.Business</RootNamespace>
+    <AssemblyName>TicariOtomasyon.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IBankService.cs" />
+    <Compile Include="Abstract\ICityService.cs" />
+    <Compile Include="Abstract\ICompanyService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IEmployeeService.cs" />
+    <Compile Include="Abstract\IEntityService.cs" />
+    <Compile Include="Abstract\IExpenseService.cs" />
+    <Compile Include="Abstract\IInvoiceDetailService.cs" />
+    <Compile Include="Abstract\IInvoiceService.cs" />
+    <Compile Include="Abstract\INoteService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Abstract\IStockService.cs" />
+    <Compile Include="Abstract\ITownService.cs" />
+    <Compile Include="Concrete\BankManager.cs" />
+    <Compile Include="Concrete\CityManager.cs" />
+    <Compile Include="Concrete\CompanyManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\EmployeeManager.cs" />
+    <Compile Include="Concrete\EntityManagerBase.cs" />
+    <Compile Include="Concrete\ExpenseManager.cs" />
+    <Compile Include="Concrete\InvoiceDetailManager.cs" />
+    <Compile Include="Concrete\InvoiceManager.cs" />
+    <Compile Include="Concrete\NoteManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
+    <Compile Include="Concrete\StockManager.cs" />
+    <Compile Include="Concrete\TownManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TicariOtomasyon.DataAccess\TicariOtomasyon.DataAccess.csproj">
+      <Project>{8B5DAB42-16F8-4661-9F08-274518FAC8B2}</Project>
+      <Name>TicariOtomasyon.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TicariOtomasyon.Entities\TicariOtomasyon.Entities.csproj">
+      <Project>{C98091C0-925C-4BAE-A50D-A9567D1F4577}</Project>
+      <Name>TicariOtomasyon.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

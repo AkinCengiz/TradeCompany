@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TicariOtomasyon.Entities.Abstract;
+
+namespace TicariOtomasyon.Entities.Concrete
+{
+    public class Employee : IEntity
+    {
+        public int EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Telephone { get; set; }
+        public string IdentityNumber { get; set; }
+        public int City { get; set; }
+        public int Town { get; set; }
+        public string Mail { get; set; }
+        public string Address { get; set; }
+        public string Duty { get; set; }
+    }
+}
